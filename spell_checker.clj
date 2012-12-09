@@ -2,7 +2,7 @@
   (assoc M K (inc (get M K 0))))
 
 (def NWORDS
-	(reduce map-count {} (re-seq #"[a-z]+" (clojure.string/lower-case (slurp "/Users/jayanth/Desktop/big.txt")))))
+	(reduce map-count {} (re-seq #"[a-z]+" (clojure.string/lower-case (slurp "path/to/text")))))
 
 (def alphabets ["a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z" ""])
 
